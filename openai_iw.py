@@ -2,7 +2,7 @@ import os
 import openai
 import streamlit as st
 
-openai.api_key = os.environ.get("OPENAI_API_KEY")
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 # Create a text area widget for user input
 function = st.text_area("Enter your question about Interworks here:")
