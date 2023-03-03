@@ -2,6 +2,7 @@ import os
 import openai
 import streamlit as st
 
+st.header('About InterWorks')
 openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 # Create a text area widget for user input
@@ -23,5 +24,4 @@ if function:
     doc_string = response["choices"][0]["text"]
 
     # Use streamlit.write or other widgets to display the generated doc string on your web app
-    st.header('About InterWorks')
     st.markdown(doc_string)
