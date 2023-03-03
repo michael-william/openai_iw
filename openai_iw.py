@@ -6,7 +6,7 @@ st.header('About InterWorks')
 openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 # Create a text area widget for user input
-function = st.text_area("Enter your question about Interworks here:")
+function = st.text_area("Ask a question about InterWorks here:",placeholder="Write 250 words describing what InterWorks does and how they do it")
 
 # Check if user input is not empty
 if function:
